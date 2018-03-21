@@ -13,4 +13,19 @@ grafik dosyalarý gibi diðer kaynaklarý içerir. Browser HTTP cevabýný aldýðýnda H
 dökümanýnýn kullanýcýnýn görebileceði bir web sayfasýna render eder. Kullanýcý baþka
 bir sayfa isteðinde bulunduðunda bu süreç tekrarlanýr.
 
+	HTML, browserlarýn uygulamanýn web sayfalarýna dönüþtürdüðü dildir.
+	
+	Statik bir web sayfasý diskte saklanan bir HTML dökümanýdýr ve kullanýcý girdilerine
+cevap olarak deðiþmezler. Statik web sayfalarýnýn uzantýlarý .htm ve ya .html þeklindedir.
+	
+	HTTP, web browserlarý ile web serverlarýnýn haberleþmek için kullandýðý protokoldür.
+
+	Browserlar HTTP isteði olarak bilinen mesajlarý web serverýna göndererek serverdan bir
+sayfa isteðinde bulunurlar. Statik bir web sayfasý için HTTP isteði istenilen HTML dosyasýnýn
+ismini içerir.
+
+	Web serverlarý HTTP isteklerine HTTP cevabý olarak bilinen mesajlarý browsera geri göndererek
+cevap verirler. Statik bir web sayfasý için HTTP cevabý, HTML dosyasýnda tutulan HTML dökümanýný 
+içerir.
+
 	
