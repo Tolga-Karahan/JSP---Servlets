@@ -1,0 +1,31 @@
+	- Bir web uygulaması kullanıcı isteklerine cevap olarak üretilen bir dizi web sayfasıdır.
+
+	- Bir web uygulamasını koşabilmek için, client bir web browserına; server ise web server
+yazılımına ihtiyaç duyar. Server aynı zamanda bir DBMS gerektirebilir.
+
+	- HTML, browserın uygulamanın web sayfalarına dönüştürdüğü dildir. HTTP ise web browserları
+ve web serverlarının haberleşmek için kullandığı protokoldür. 
+
+	- Bir web browserı bir HTTP isteği göndererek web serverından bir web sayfası ister. Web
+serverı ise browsera bir HTTP cevabı göndererek karşılık verir.
+
+	- Bir statik web sayfası değişmeyen bir HTML dökümanından üretilir. Dinamik bir web sayfası
+ise HTTP isteğinde bulunan parametrelere göre web uygulaması tarafından üretilir. 
+
+	- Java EE spesifikasyonu tüm web serverlarının Java web teknolojileri ile nasıl etkileşimde
+bulunacağını tanımlar. 
+
+	- Bir servlet/JSP motoru, bir web serverının Java EE spesifikasyonunun servlet/JSP kısmı ile
+çalışabilmesini sağlayan yazılımdır. 
+
+	- Bir uygulama serverı, web serverının tüm Java EE spesifikasyonu ile çalışabilmesini sağlayan
+yazılımdır.
+
+	- Java web uygulamalarını koşabilmek için serverda JDK, bir web serverı ve bir servlet/JSP
+motoru bulunmalıdır. Server bu sayede HTTP isteklerini işlemden geçirir ve bir HTTP cevabı döndürür.
+
+	- Java web uygulamaları geliştirilirken uygulama üç katmana bölünmeye çalışılır. Böylece
+uygulama daha kolay sürdürülebilir ve bakım yapılabilir.
+
+	- Web uygulamasının dosyalarını bir web serverına aktarmak için FileZilla gibi bir FTP client
+kullanılabilir.   
