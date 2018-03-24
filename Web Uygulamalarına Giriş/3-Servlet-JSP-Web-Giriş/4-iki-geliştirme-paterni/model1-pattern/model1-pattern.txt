@@ -1,6 +1,6 @@
 	Model 1 patern figürde gösterilmiştir. Uygulamanın istek ve cevapları tek bir
 JSP kullanılarak halledilir ve aynı zamanda JSP uygulama için tüm işlemleri yapar.
-Bunun için JSP business nesnelerinin verilerini temsil eden Java sınıfları ve nesneleri
+Bunun için JSP, business nesnelerinin verilerini temsil eden Java sınıfları ve nesneleri
 ile etkileşime geçer ve bu verilerin işlenmesi için gerekli metodları sağlar. Örneğin
 figürde uygulama kullanıcı verilerini bir User nesnesinde saklamaktadır.
 
