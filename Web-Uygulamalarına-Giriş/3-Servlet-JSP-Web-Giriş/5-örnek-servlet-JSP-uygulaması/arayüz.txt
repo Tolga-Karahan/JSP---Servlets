@@ -1,0 +1,24 @@
+	Figürde bir kullanıcının email listesine kaydolmasını sağlayan örnek bir web uygulaması
+gösterilmiştir. İlk sayfa bir statik HTML sayfasıdır ve kullanıcının email adresi, ad, soyad gibi
+bilgilerini girmesini sağlar. Kullanıcı verilerini girip butona tıkladığından servera bir HTTP
+isteği gönderir. 
+
+	Serverda bir servlet kullanıcının girdiği verileri HTTP isteğinden alır, bir User nesnesinde
+tutar ve UserDB sınıfını kullanarak kullanıcı verilerini veritabanında saklar. Ardından browsera bir
+HTTP cevabı döndürür. HTTP cevabı bir dinamik web sayfası içerir. Bu sayfada kullanıcının girdiği
+veriler gösterilmektedir. 
+
+	Uygulamanın ilk sayfasını göstermek için browser localhost:8080/ch02email/ URL'sini çağırmıştır.
+URL'nin ilk kısmından serverın browser ile aynı serverda, 8080 portunda koştuğu anlaşılmaktadır. 8080
+portu Tomcat için varsayılan porttur. URL'nin ikinci kısmından uygulamanın isminin ch02email olduğunu
+anlıyoruz. URl herhangi bir dosya ismi belirtmediğinden Tomcat dizin için varsayılan dosyayı gösterir.
+Bu dosya tipik olarak index.html, index.htm ve ya index.jsp olarak isimlendirilir. 
+
+	Kullanıcı butona tıkladığında uygulamanın ikinci sayfası gösterilir. Bu sayfanın URL'si ise 
+localhost:8080/ch02email/emailList şeklindedir. URL'nin üçüncü kısmı ilk sayfada girilen verileri
+işlemden geçiren servlete map edilmiştir. 
+
+	- Uygulamanın ilk sayfası kullanıcıdan verileri alarak servera bir HTTP isteği gönderen bir
+HTML sayfasıdır.
+
+	- Uygulamanın ikinci sayfası ise kullanıcının girdiği verileri gösteren bir JSP sayfasıdır.      

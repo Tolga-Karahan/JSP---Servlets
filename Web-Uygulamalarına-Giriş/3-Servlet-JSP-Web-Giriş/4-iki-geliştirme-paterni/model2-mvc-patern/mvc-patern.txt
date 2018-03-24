@@ -1,0 +1,41 @@
+	Figürde Model 2 patern gösterilmiştir. Bu patern uygulama kodunu üç ayrı katmana böler:
+model, view ve controller. Dolayısıyla bu patern aynı zamanda MVC patern olarakta bilinir. Bu 
+patern işlem gereksinimlerinin çok olduğu uygulamalarda Model 1 paternden daha iyi çalışır.
+
+	MVC paterninde model, uygulamanın business katmanını tanımlar. Bu katman genellikle
+JavaBeanler ile implement edilir. Bu tipte sınıflar business nesneleri için verileri tanımlar
+ve bu verileri işlemek için gerekli olan metodları sağlar. 
+	
+	View uygulamanın presentation katmanını tanımlar. HTML'i browsera göndermek için servlet
+kullanmak elverişsiz olduğundan MVC uygulamasında HTML dökümanları ve ya JSP'ler kullanılarak 
+view browsera sağlanır.
+
+	Controller uygulamanın akışını yönetir ve bu iş servletler tarafından yapılır. Başlangıç
+olarak genellikle bir servlet istekten parametreleri okur ve ardından eğer gerekliyse modeli
+günceller ve veritabanında saklar. Son olarak servlet güncellenmiş modeli sunum için JSP'lerden
+birine ilerletir.
+
+	Çoğu uygulamada model da bulunan verilerin veritabanında tutulması ihtiyacı söz konusudur.
+Fakat genellikle JavaBean'ler kendi verilerini saklamak için gerekli metodlara sahip değildir. Bu
+metodlar fügürdeki UserDB sınıfı gibi data access sınıfları tarafından tanımlanır. Bu sayede
+business, data access işlemlerinden ayrılmış olur.
+
+	MVC paterni kullanıldığında model, view ve controller mümkün olduğunca birbirinden ayrı
+tutulmaya çalışılır. Bu sayede uygulama gerektiğinde daha kolay değiştirilebilir. Örneğin uygulama
+görünümünü değiştirmek istiyorsak controller ve model katmanlarına dokunmadan sadece view katmanı
+üzerinde değişiklikler yapabiliriz. Pratikte ise bu katmanları tamamen ayrı tutmak zor olsa da
+amaç bu şekildedir.
+
+	- Model2(MVC) paterni kodu bir model, bir view ve bir controllera ayırır.
+
+	- MVC paterni önemli miktarda işlem gereksinimleri olan web uygulamalarını yapılandırmak
+için kullanılır. Böylece kodlamak ve uygulamayı sürdürmek kolaylaşır.
+
+	- MVC paterninde model figürdeki User nesnesi gibi business nesnelerinden oluşur. View
+HTML sayfaları ve JSP'leri içerir, controller ise servletlerden oluşur.
+
+	- Genellikle data access sınıflarının metodları kullanılarak business nesneleri veritabanına
+okunur ve ya yazılır. 
+
+	- MVC paterninde her bir katman birbirinden mümkü olduğunca ayrı oluşturulmaya çalışılır. 
+Bu sayede bir katmandaki değişiklikler diğer katmanlara minimum şekilde yansır.  	

@@ -1,0 +1,21 @@
+	Figürde bir servlet/JSP uygulaması için ana yazılım bileşenleri gösterilmiştir. Serverda neden bir
+web server yazılımı çalışması gerektiğinden bahsedilmişti. Ek olarak Servlet ve JSP'ler ile çalışabilmek için
+serverda bir servlet/JSP motorununda koşması gerekir. Servlet/JSP motoru servlet/JSP container olarakta bilinir.
+Bu notlarda Tomcat serverının kullanılmasından bahsedilecektir. Tomcat server Java web uygulamaları için
+en çok kullanılan serverlardan biridir ve bir web serverının yanısıra bir servlet/JSP motoru içerir.
+
+	Bir servlet/JSP motorunun düzgün biçimde çalışabilmesi için Java SE'nin bir parçası olan JDK'ya
+erişebilmesi gerekir. JDK içerisinde Java derleyicisi ve Java ile çalışabilmek için gereken temel sınıflar
+bulunur. Tüm servlet/JSP motorlarının Java EE spesifikasyonunun servlet/JSP bölümünü implement etmeleri
+gerektiğinden tüm servlet/JSP motorları benzer biçimde çalışır. Yani teoride servlet/JSP kodu, servlet/JSP
+motorları ve uygulama serverları arasında portable olur. Fakat pratikte servlet/JSP motorları ve web serverları
+arasında ufak farklılıklar söz konusudur. Dolayısıyla servlet/JSP motorları ve serverlar arasında geçiş yaparken
+kodda bir takım değişiklikler gerekebilir.
+	
+	Çoğu servlet/JSP web uygulaması verilerini bir veritabanında sakladığından server aynı zamanda bir 
+veritabanı serverı da koşar. Bu notlarda MySQL kullanılacaktır.
+
+	Bir servlet/JSP uygulaması HTTP isteklerini işleyebilmek ve HTTP cevaplarını dönürebilmek içinbir web serverına
+ ve servlet/JSP container olarakta bilinen bir servlet/JSP motoruna sahip olmalıdır.
+
+	 

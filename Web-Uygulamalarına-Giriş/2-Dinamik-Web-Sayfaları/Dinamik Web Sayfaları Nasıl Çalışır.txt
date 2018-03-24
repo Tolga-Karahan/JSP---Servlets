@@ -1,0 +1,31 @@
+	Statik web sayfalarýnýn aksine dinamik bir web sayfasý, diðer sayfalardan
+web uygulamasýna gönderilen parametrelere göre deðiþir. Örneðin bir online
+alýþveriþ sitesinde sepete ekle butonuna týklanýldýðýnda statik web sayfasý 
+web uygulamasýný çaðýrarak bazý parametre ve ya parametreleri gönderir.
+Ardýndan web uygulamasý dinamik web sayfasýný üreterek, sayfanýn HTML'ini
+browsera geri gönderir.
+	Figürde bu süreç gösterilmiþtir. Bir kullanýcý bir web sayfasýna veriler 
+girip uygun butona týkladýðýnda browser servera bir HTTP isteði gönderir. Bu
+istek sonraki sayfanýn adresinin yanýsýra kullanýcý tarafýndan girilen herhangi
+bir veriyi içerir. Server isteði alýp, isteðin bir dinamik web sayfasý isteði
+olduðuna karar verdiðinde isteði web uygulamasýna geri döndürür. 
+
+	Web uygulamasý isteði aldýðýnda kullanýcýnýn girdiði verileri iþler ve bir
+HTML dökümaný üreterek dökümaný web serverýna gönderir. Web serverý da dökümaný
+HTTP cevabý olarak tekrar browsera geri gönderir. Böylece browser cevap olarak
+dönen HTML dökümanýný render ederek web sayfasýný gösterebilir.
+
+	Bir dinamik web sayfasý, web uygulamasý tarafýndan üretilen bir HTML dökümanýdýr.
+
+	Bir web serverý bir dinamik web sayfasý için istek aldýðýnda isteði web uygulamasýna
+geçirir. Ardýndan web uygulamasý bir HTML dökümaný gibi bir cevap üreterek web serverýna 
+döndürür. Web serverý üretilen HTML dökümanýnýn bir HTTP cevabý içerisine sararak browsera
+geri gönderir. 
+
+	Modern web uygulamalarýnýn çoðu bir veritabaný serverýnda koþan bir veritabanýnda verileri
+alýr ve saklar.
+
+	Browser döndürülen HTML dökümanýnýn bir statik HTML dosyasý ve ya web uygulamasý tarafýndan
+üretilen dinamik bir dosya olup olmadýðýyla ilgilenmez. Sadece dönrürülen HTML dökümanýný gösterir.
+
+	
