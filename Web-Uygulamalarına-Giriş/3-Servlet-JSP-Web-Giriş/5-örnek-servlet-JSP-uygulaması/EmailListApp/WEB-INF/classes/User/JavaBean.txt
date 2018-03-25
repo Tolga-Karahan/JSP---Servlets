@@ -1,0 +1,26 @@
+	Örnekte verilen User sınıfı bir JavaBean örneğidir. Çünkü JavaBean'lerin sahip olması 
+gereken üç kuralı takip etmektedir.
+
+	İlk olarak bir JavaBean argüman almayan bir constructora sahip olmalıdır. Örnekte argüman
+almayan constructor instance değişkenlerini boş stringe setlemektedir. Böylece string referanslarının
+null yerine boş string tutması sağlanır.
+
+	İkinci olarak bir JavaBean, bir JSP tarafından erişilmesi gereken tüm üyeler için get ve set
+metodlarına sahip olmalıdır. Boolean değişkenler için get yerine is kullanılır. isEmailUpdated gibi...
+
+	Üçüncü olarak bir JavaBean Serializable ve ya Externalizable arayüzlerinden birini implement
+etmelidir. Serializable arayüzü java.io paketinde bulunan bir etiketleme arayüzüdür. Bu arayüzün 
+implement edilmesi ilgili sınıfın get, set ve is metodlarını iplement ettiği anlamına gelir. Böylece
+başka bir sınıf bu metodları kullanarak ilgili sınıfın instance değişkenlerini metin gibi kalıcı bir
+veri kaynağından okuyup yazabilir ve ya kaynağa okuyup yazabilir. Böylece bir servlet motoru bu nesneyi
+kaydedebilir ve gerekirse tekrar gözden geçirebilir. Örneğin Tomcat containerı kapanmadan önce nesnenin
+durumunu kaydedebilir ve bir sonraki başlamasında tekrar nesnenin durumunu gözden geçirebilir. Bir web
+uygulaması kodlanırken JavaBean'lerin business nesnelerini tanımlamak için kullanılması yaygındır. 
+
+	- Bir JavaBean ve ya kısaca bean, argüman almayan bir constructor tanımlayan; tüm instance
+değişkenleri için get ve set metodları tanımlayan ve Serializable ve ya Externalizable arayüzlerinden
+birini implement eden bir Java sınıfıdır. 
+
+	- JavaBean'ler sadece Java sınıfları oldukları için bir plain old Java object(POJO) tipidirler. 
+
+	  

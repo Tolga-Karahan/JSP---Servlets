@@ -1,0 +1,21 @@
+	Business sınıflarının JavaBean olarak implement edilmesinin en büyük faydası
+özel JSP etiketleri kullanarak beanler ile çalışabilmektir. Bu etiketler EL(expression
+language) etiketleri olarak bilinir ve $ işareti ile başlarlar. Örnek jsp dosyasında
+bu etiketler gösterilmiştir. Bu etiketleri kullanabilmemiz, ilgili servletin kullanıcı
+bilgilerini tutan user nesnesini HTTP isteğinin içine koyması ve bu bilgileri tutan
+sınıfın bir JavaBean olması sayesindedir. JavaBean'ler de bulunan get metodlarının
+sayesinde EL etiketleri ile JSP içerisine veri çekebiliriz. 
+
+	JSP içerisine Java kodu koyulabilsede bu önerilen bir yaklaşım değildir. Bu
+nedenle Java kodu servlet içerisinde tutulur ve servlet HTTP istek ve cevap nesnelerini
+JSP'ye ilerletir. Bu sayede servlet bilgileri işlerken JSP ise görsel arayüz için HTML
+kodunu sağlar. 
+
+	JSP istenildiğinde  JSP  motoru, JSP kodunu bir servlete çevirerek derler ve 
+servlet motoruna yükler. Ardından servlet motoru derlenen servleti koşar. Sonradan gelen
+istekler için JSP motoru ilgili JSP'ye karşılık düşen servleti koşar. 
+
+	- Bir JSP(Java Server Page) HTML kodu içerisine gömülen özel EL etiketleri içerir.
+EL etiketleri $ ile başlar.
+
+	- 
