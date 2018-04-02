@@ -1,6 +1,0 @@
-	Bir pattern programcıların yaygın programlama problemlerini çözmek için
-kullandığı standart bir yaklaşımdır. Bu kısımda Java web uygulamaları geliştirmek
-için kullanılabilecek iki pattern tanımlanmıştır. Fakat ikinci patternin kullanılması
-en iyi sonuçları verecektir. 
-
-	 
